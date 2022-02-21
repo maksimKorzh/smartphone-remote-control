@@ -45,5 +45,15 @@ while(True):
         pyautogui.mouseUp()
         print('Mouse up')
 
+    if event == 'keypress':
+        try:
+            print('Pressed "' + command[1] + '"')
+            if command[1] == 'newline': pyautogui.press('return');
+            elif command[1] == 'backspace': pyautogui.press('backspace');
+            elif command[1] == 'space': pyautogui.press(' ');
+            else: pyautogui.press(command[1])
+        
+        except:
+            pass
 
 
