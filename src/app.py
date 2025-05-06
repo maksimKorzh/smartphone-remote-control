@@ -26,7 +26,7 @@ def root():
               <button id="left" type="button" class="w-100" style="height: 200px; background-color: #F0F0F0; font-size: 100px;">Left</button>
               <button id="right" type="button" class="w-100" style="height: 200px; background-color: #F0F0F0; font-size: 100px;">Right</button>
             </div>
-            <input id="keyboard" type="text" class="w-100" placeholder="          Tap here to type text..." style="height: 200px; font-size: 100px;">
+            <input id="keyboard" autocorrect="off" autocapitalize="none" type="text" class="w-100" placeholder="          Tap here to type text..." style="height: 200px; font-size: 100px;">
             <div id="touchpad" style="display:flex; width: 100%; height: 100%; background-color: black"></div>
             <script>
               var curX = 0;
